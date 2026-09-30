@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Websites by Me</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0f;color:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,11,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid #25252d}
+.nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px}
+.logo span{color:#7c5cff}
+.links{display:flex;gap:22px;font-size:14px;color:#c8c8d0}
+.links a:hover{color:#fff}
+.hero{max-width:1100px;margin:auto;padding:100px 22px 80px}
+.badge{display:inline-block;border:1px solid #34343e;background:#15151c;color:#bdb7ff;border-radius:30px;padding:8px 13px;font-size:13px;margin-bottom:22px}
+h1{font-size:clamp(45px,8vw,82px);line-height:.98;letter-spacing:-4px;max-width:850px}
+h1 span{color:#7c5cff}
+.hero p{max-width:650px;color:#aaaab5;font-size:18px;margin:25px 0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 18px;border-radius:10px;font-weight:700;border:1px solid #30303a}
+.primary{background:#7c5cff;border-color:#7c5cff}
+.primary:hover{background:#6b4df0}
+.secondary:hover{background:#17171e}
+section{max-width:1100px;margin:auto;padding:75px 22px}
+.section-title{font-size:38px;margin-bottom:10px;letter-spacing:-1px}
+.section-sub{color:#9999a5;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#131319;border:1px solid #282831;border-radius:18px;padding:25px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.card:hover{border-color:#575763;transform:translateY(-3px);transition:.2s}
+.icon{width:44px;height:44px;border-radius:12px;background:#211b3d;color:#a99dff;display:grid;place-items:center;font-size:20px;margin-bottom:18px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:#9d9da8;font-size:14px}
+.card .small{margin-top:20px;color:#cfc9ff;font-size:13px;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{padding:25px;border-left:2px solid #7c5cff;background:#111117;border-radius:0 15px 15px 0}
+.num{color:#7c5cff;font-weight:800;margin-bottom:12px}
+.contact{background:#131319;border:1px solid #282831;border-radius:22px;padding:38px}
+.contact p{color:#a5a5b0;max-width:650px;margin:10px 0 25px}
+footer{border-top:1px solid #25252d;color:#777782;text-align:center;padding:30px 20px;font-size:13px}
+@media(max-width:750px){
+ .links{gap:10px;font-size:12px}
+ .grid,.steps{grid-template-columns:1fr}
+ h1{letter-spacing:-2px}
+ .hero{padding-top:70px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav">
+    <div class="logo">Websites<span>.</span></div>
+    <div class="links">
+      <a href="#work">My Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="badge">WEBSITE DESIGN & BUILDING</div>
+  <h1>I make websites that look <span>good.</span></h1>
+  <p>I build clean, modern websites for people, small businesses, creators, restaurants, shops, and more.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#work">See my websites</a>
+    <a class="btn secondary" href="#contact">Work with me</a>
+  </div>
+</header>
+
+<section id="work">
+  <h2 class="section-title">My websites</h2>
+  <p class="section-sub">Different styles for different people and businesses.</p>
+  <div class="grid">
+    <div class="card">
+      <div><div class="icon">🍽️</div><h3>Restaurants</h3><p>Menus, hours, location, contact buttons, and more.</p></div>
+      <div class="small">VIEW WEBSITE →</div>
+    </div>
+    <div class="card">
+      <div><div class="icon">✂️</div><h3>Barbers & Shops</h3><p>Simple websites that help customers find and contact you.</p></div>
+      <div class="small">VIEW WEBSITE →</div>
+    </div>
+    <div class="card">
+      <div><div class="icon">🛍️</div><h3>Small Businesses</h3><p>Professional pages for local businesses and brands.</p></div>
+      <div class="small">VIEW WEBSITE →</div>
+    </div>
+    <div class="card">
+      <div><div class="icon">🎨</div><h3>Creators</h3><p>Personal websites for creators, artists, and portfolios.</p></div>
+      <div class="small">VIEW WEBSITE →</div>
+    </div>
+    <div class="card">
+      <div><div class="icon">⭐</div><h3>Personal Sites</h3><p>Clean personal pages made around your style.</p></div>
+      <div class="small">VIEW WEBSITE →</div>
+    </div>
+    <div class="card">
+      <div><div class="icon">+</div><h3>Your idea</h3><p>Have a different idea? I can build a website around it.</p></div>
+      <div class="small">START A PROJECT →</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">How it works</h2>
+  <p class="section-sub">Simple from start to finish.</p>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>You tell me your idea</h3><p>Tell me what the website is for and what you want on it.</p></div>
+    <div class="step"><div class="num">02</div><h3>I build it</h3><p>I design the layout, add the information, and make the buttons work.</p></div>
+    <div class="step"><div class="num">03</div><h3>You get your website</h3><p>You can look over it and ask for changes to make it yours.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2 class="section-title">Want a website?</h2>
+    <p>Tell me what kind of website you want and I can start building it.</p>
+    <div class="buttons">
+      <a class="btn primary" href="mailto:your@email.com?subject=I%20want%20a%20website">Contact me</a>
+      <a class="btn secondary" href="#work">See my work</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Websites by Me · Built with creativity.
+</footer>
+
+</body>
+</html>
